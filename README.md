@@ -10,3 +10,10 @@ Clone the project and then,
 ``` shell
 $ yarn && yarn dev
 ```
+
+
+
+
+
+[Babel]: <https://babeljs.io/>
+[Webpack]: <https://webpack.github.io/>
