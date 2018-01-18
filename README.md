@@ -3,4 +3,7 @@
 ## Start with the project
 
 Clone the project and then, 
-`$ yarn && yarn dev`
+
+``` shell
+$ yarn && yarn dev
+```
