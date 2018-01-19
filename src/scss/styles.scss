@@ -6,6 +6,11 @@
  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
 }
 
+* {
+  box-sizing: border-box;
+  margin : 0
+}
+
 h1 {
   color: blue;
   font-family: "Roboto", Arial;
