@@ -1,4 +1,5 @@
 # YikeBoard - Landing page
+### https://goofy-haibt-4010af.netlify.com/
 
   - [Babel] - The compiler to compile your JS files with es6, es7, JSX syntax to regular javascript
   - [Webpack] - The module binder which takes all your JS files from different directories and compiles them into a single      file
