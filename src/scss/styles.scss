@@ -12,6 +12,23 @@
   margin : 0
 }
 
+#contentPage {
+  height: auto;
+  margin-top: $navBarHeight;
+    &__mobile {
+      width: 100vw
+    }
+    &__tablette {
+      width: 90vw;
+      margin: 0 auto;
+    }
+    &__desktop {
+      width: 85vw;
+      margin: 0 auto;
+    }
+
+}
+
 h1 {
   color: blue;
   font-family: "Roboto", Arial;
