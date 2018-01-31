@@ -1,6 +1,11 @@
 @import 'blocs/header';
 @import 'blocs/footer';
 @import 'blocs/firstSection';
+@import 'blocs/secondSection';
+@import 'blocs/thirdSection';
+@import 'blocs/fourthSection';
+@import 'blocs/fifthSection';
+
 @import 'variables';
 
 @font-face {
@@ -19,7 +24,6 @@ html {
 
 #contentPage {
   height: auto;
-
     &__mobile {
       width: 100vw
     }
@@ -31,4 +35,52 @@ html {
       width: 85vw;
       margin: 0 auto;
     }
+
+}
+
+.sectionContent {
+  width: 80%;
+  margin: 10% auto;
+  text-align: center;
+  h2 {
+    padding: 0 0 7% 0;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-family: sans-serif;
+  }
+  p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-family: sans-serif;
+    font-weight: 200;
+  }
+}
+
+.circleButtonContainer {
+  width: 60%;
+  margin: -15rem auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.redCircleButton {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  background-color: red;
+}
+
+.greenCircleButton {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  background-color: green;
+}
+
+.blueCircleButton {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  background-color: blue;
 }
