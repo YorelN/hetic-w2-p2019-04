@@ -1,0 +1,19 @@
+.realaseSection {
+  height: 85vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url("../img/YikeBoard_15.jpg") no-repeat 35% 0;
+  background-size: 270%;
+  h2 {
+    font-size: 6rem;
+    padding-left: 6%;
+    font-weight: 900;
+    color: #FFFFFF;
+    font-family: sans-serif;
+    width: 70%;
+    margin: 0 auto;
+  }
+}

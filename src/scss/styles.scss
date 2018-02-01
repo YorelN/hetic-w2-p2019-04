@@ -5,6 +5,8 @@
 @import 'blocs/thirdSection';
 @import 'blocs/fourthSection';
 @import 'blocs/fifthSection';
+@import 'blocs/sixthSection';
+@import 'blocs/seventhSection';
 
 @import 'variables';
 
@@ -58,7 +60,7 @@ html {
 
 .circleButtonContainer {
   width: 60%;
-  margin: -15rem auto;
+  margin: 3rem auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -83,4 +85,15 @@ html {
   height: 5rem;
   border-radius: 100%;
   background-color: blue;
+}
+
+
+button {
+  padding: 1rem 3rem;
+  background-color: #27ae60 ;
+  border: none;
+  color: white;
+  margin: 4rem 0;
+  font-size: 3rem;
+  text-transform: uppercase;
 }
