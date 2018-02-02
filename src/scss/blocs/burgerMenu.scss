@@ -1,0 +1,35 @@
+.burgerMenu {
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  position: fixed;
+  background-color: #23a455;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: sans-serif;
+  color: white;
+  transition: 0.3s;
+  li {
+    opacity: 1;
+    margin: 3rem -20px;
+  }
+  li:first-child {
+    text-align: right;
+    margin: -9rem 4rem 0 0
+  }
+}
+
+.active {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.showLi {
+  opacity: 1;
+  margin: 3rem 0;
+}
