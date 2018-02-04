@@ -8,17 +8,15 @@
 @import 'blocs/fifthSection';
 @import 'blocs/sixthSection';
 @import 'blocs/seventhSection';
+@import 'blocs/contactForm';
 
 @import 'variables';
 
-@font-face {
- font-family: "Roboto";
- src: url("../fonts/Roboto-Regular.ttf") format("truetype");
-}
 
 * {
   box-sizing: border-box;
-  margin : 0
+  margin : 0;
+  font-family: "Arimo", sans-serif;
 }
 
 html {
@@ -49,7 +47,7 @@ html {
     padding: 0 0 7% 0;
     font-size: 2.2rem;
     text-transform: uppercase;
-    font-family: sans-serif;
+    font-family: "Anton", sans-serif;
   }
   p {
     font-size: 1.5rem;

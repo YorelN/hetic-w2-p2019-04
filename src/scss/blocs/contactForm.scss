@@ -1,0 +1,70 @@
+@import '../_variables.scss';
+.contactForm {
+  height: 100vh;
+  .contactForm__bg {
+    background: url("../img/YikeBoard_10.jpg") no-repeat center;
+    background-size: 265%;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  .contactForm__bg:after {
+    content: '\A';
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.6);
+  }
+
+  .contactForm__bg__opacity {
+    margin-top: 15%;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    h2 {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 3rem;
+      margin-bottom: 5%;
+    }
+    form {
+      font-size: 2rem;
+      margin: 4% 10%;
+    }
+    label {
+      width: 100%;
+      margin-left: 10%;
+      text-align: left;
+      text-transform: capitalize;
+    }
+    input,
+    textarea{
+      width: 80%;
+      border-radius: 2pt;
+      border: 2px solid rgb(227, 227, 227);
+      filter: opacity(55%);
+      line-height: 2rem;
+      margin: 5% 10%;
+      color: $black;
+      font-size: 2rem;
+      &[type="submit"] {
+        width: 40%;
+        margin-top: 10%;
+        margin-left: 30%;
+        margin-right: 30%;
+        padding: 2%;
+        font-size: 2rem;
+        filter: opacity(100%);
+        text-transform: capitalize;
+        background-color: $primary;
+        color: #fff;
+        border-radius: 2pt;
+        border: 1pt solid $primary;
+      }
+    }
+  }
+}
