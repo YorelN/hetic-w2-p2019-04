@@ -92,4 +92,9 @@ button {
   margin: 4rem 0;
   font-size: 3rem;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  cursor: pointer;
 }

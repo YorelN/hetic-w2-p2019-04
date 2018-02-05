@@ -17,6 +17,14 @@
 @media screen and (min-width: 650px) {
   .secondSection {
     float: left;
-    width: 50%;
+    width: 33.3%;
+    margin: 0;
+  }
+
+  .fourthSection {
+    width: 100%;
+  }
+  .secondSection .secondSectionIcon {
+    background-size: 12%;
   }
 }
