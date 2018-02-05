@@ -1,10 +1,11 @@
 @import '../_variables.scss';
-footer {
-  height: 60vh;
-  background-color: #5B5B5B;
+.newsletter {
+  background-color: rgba(25, 25, 25, 0.3);
+  display: flex;
+  flex-direction: column;
   h2 {
     padding: 4rem 0;
-    font-size: 4rem;
+    font-size: 2.5rem;
     font-weight: 900;
     text-transform: uppercase;
     text-align: center;
@@ -12,19 +13,22 @@ footer {
   }
   form {
     width: 100%;
+    margin-bottom: 4rem;
     input[type="email"] {
+      display: block;
       width: 80%;
       border-radius: 2pt;
       border: 2px solid rgb(227, 227, 227);
       filter: opacity(28%);
       line-height: 4rem;
       margin: 0 10%;
+      font-size: 2.5rem;
     }
     input[type="submit"] {
+      display: block;
+      margin: 0 auto;
       width: 40%;
       margin-top: 10%;
-      margin-left: 30%;
-      margin-right: 30%;
       padding: 2%;
       font-size: 2rem;
       text-transform: capitalize;
@@ -33,5 +37,24 @@ footer {
       border-radius: 2pt;
       border: 1pt solid $primary;
     }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .newsletter form {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  input[type="email"]#mail {
+    display: block;
+    width: 30%;
+    margin: 0 1% 0 0;
+  }
+  input[type="submit"]#subscribe {
+    display: block;
+    margin: 0;
+    width: 12%;
+    padding: 1% 0;
   }
 }
