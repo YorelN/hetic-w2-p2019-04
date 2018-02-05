@@ -20,4 +20,14 @@ if (navLogo) {
     });
 }
 
+let contactBtn = document.querySelector('.btn-contact');
+let contactForm = document.querySelector('.contactForm');
+let closeBtn = document.querySelector('.cross');
 
+contactBtn.addEventListener('click', function () {
+    contactForm.classList.remove('hidden');
+});
+
+closeBtn.addEventListener('click', function () {
+    contactForm.classList.add('hidden');
+});
