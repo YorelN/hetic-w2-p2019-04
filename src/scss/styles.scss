@@ -16,7 +16,7 @@
 * {
   box-sizing: border-box;
   margin : 0;
-  font-family: "Arimo", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 html {
@@ -25,18 +25,16 @@ html {
 
 #contentPage {
   height: auto;
-    &__mobile {
-      width: 100vw
-    }
-    &__tablette {
-      width: 90vw;
-      margin: 0 auto;
-    }
-    &__desktop {
-      width: 85vw;
-      margin: 0 auto;
-    }
-
+  &__mobile {
+  }
+  &__tablette {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  &__desktop {
+    width: 85vw;
+    margin: 0 auto;
+  }
 }
 
 .sectionContent {
@@ -45,15 +43,13 @@ html {
   text-align: center;
   h2 {
     padding: 0 0 7% 0;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
-    font-family: "Anton", sans-serif;
   }
   p {
     font-size: 1.5rem;
-    line-height: 2.5rem;
-    font-family: sans-serif;
-    font-weight: 200;
+    line-height: 3rem;
+    font-weight: bold;
   }
 }
 
@@ -85,7 +81,6 @@ html {
   border-radius: 100%;
   background-color: blue;
 }
-
 
 button {
   padding: 1rem 3rem;

@@ -33,9 +33,7 @@ nav {
     background-size: 80%;
 }
 
-
 .header {
-    width: 100%;
     height: 100vh;
     display: flex;
     background: url("../img/YikeBoard_8.jpg") 41% 0;
@@ -46,9 +44,19 @@ nav {
     text-align: center;
     line-height: 6rem;
     font-family: "Arial ", sans-serif;
+    &:after {
+        content: '\A';
+        position: absolute;
+        height:100vh;
+        top:0;
+        left:0;
+        background:rgba(0,0,0,0.5);
+    }
     h1 {
+        font-family: "Anton", sans-serif;
         font-weight: 900;
         font-size: 5rem;
+        letter-spacing: 1rem;
         margin-top: 6rem;
         text-transform: uppercase;
         color: white;
@@ -59,5 +67,31 @@ nav {
         text-transform: uppercase;
         color: white;
         margin-bottom: 7rem;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    header.header {
+        background-size: auto;
+    }
+    h1#header__title {
+        text-align: right;
+        width: 60%;
+        margin-left: 20%;
+        font-size: 9rem;
+        display: inline-block;
+        line-height: 12rem;
+        font-weight: lighter;
+        margin-top: 12rem;
+    }
+    h2#header__second-title{
+        width: 78%;
+        text-align: right;
+        font-size: 3rem;
+    }
+    button#header__order-button{
+        text-align: right;
+        margin-left: 61%;
+        padding: 1.5% 3% 1%;
     }
 }
