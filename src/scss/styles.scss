@@ -25,6 +25,10 @@ html {
   font-size: 62.5%;
 }
 
+.hidden {
+  display: none;
+}
+
 #contentPage {
   height: auto;
   &__mobile {

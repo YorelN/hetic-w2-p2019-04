@@ -14,7 +14,7 @@
   height:10rem;
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 900px) {
   .secondSection {
     float: left;
     width: 33.3%;
@@ -26,5 +26,11 @@
   }
   .secondSection .secondSectionIcon {
     background-size: 12%;
+  }
+}
+
+@media screen and (min-width: 670px) and (max-width: 899px) {
+  .secondSection .secondSectionIcon {
+    background-size: 11%;
   }
 }
