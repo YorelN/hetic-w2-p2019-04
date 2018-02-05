@@ -44,29 +44,35 @@ nav {
     text-align: center;
     line-height: 6rem;
     font-family: "Arial ", sans-serif;
+    position: relative;
     &:after {
         content: '\A';
         position: absolute;
         height:100vh;
+        width: 100%;
         top:0;
         left:0;
         background:rgba(0,0,0,0.5);
     }
-    h1 {
-        font-family: "Anton", sans-serif;
-        font-weight: 900;
-        font-size: 5rem;
-        letter-spacing: 1rem;
-        margin-top: 6rem;
-        text-transform: uppercase;
-        color: white;
-    }
-    h2 {
-        font-weight: 500;
-        font-size: 2rem;
-        text-transform: uppercase;
-        color: white;
-        margin-bottom: 7rem;
+    .header__content {
+        z-index: 2;
+        color: #fff;
+        h1 {
+            font-family: "Anton", sans-serif;
+            font-weight: 900;
+            font-size: 5rem;
+            letter-spacing: 1rem;
+            margin-top: 6rem;
+            text-transform: uppercase;
+            color: white;
+        }
+        h2 {
+            font-weight: 500;
+            font-size: 2rem;
+            text-transform: uppercase;
+            color: white;
+            margin-bottom: 7rem;
+        }
     }
 }
 
