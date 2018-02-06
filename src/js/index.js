@@ -65,6 +65,7 @@ document.addEventListener('scroll', function () {
 
 
 const perfContainer = document.querySelectorAll('.perfContainer div');
+const iconContainer = document.querySelectorAll('.iconContainer div');
 
 
 
@@ -78,7 +79,10 @@ for (let i = 0; i < perfContainer.length; i++) {
         const perfKeyName = Object.keys(perf);
         const perfValue = Object.values(perf);
 
-        currPerf.style.color = 'green';
+        perfContainer.forEach(function (perf) {
+            perf.className = '';
+        });
+        this.classList.toggle('activePerfColor');
         const perfOne = document.querySelector('.perfKeyOne');
         const perfTwo = document.querySelector('.perfKeyTwo');
         const mesurePerfOne = document.querySelector('.mesurePerfKeyOne');
