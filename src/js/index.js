@@ -37,7 +37,7 @@ const firstSectionImg = document.querySelector('.firstSectionImg');
 document.addEventListener('scroll', function () {
     if (isInViewport(firstSectionImg) && firstSectionImg.className !== 'firstSectionImg active') {
         firstSectionImg.classList.add('active');
-        firstSectionImg.style.backgroundPosition = '100% 0';
+        firstSectionImg.style.backgroundPosition = '50% 0';
     }
     if (!isInViewport(firstSectionImg) && firstSectionImg.className === 'firstSectionImg active') {
         firstSectionImg.classList.remove('active');
