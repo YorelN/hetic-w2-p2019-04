@@ -64,8 +64,8 @@
     align-items: center;
     justify-content: center;
     .boardOneStats {
-      width: 150px;
-      height: 150px;
+      width: 120px;
+      height: 120px;
       margin: 4% 0;
       border-radius: 100%;
       border: 1px solid #AEAEAE;
@@ -80,8 +80,8 @@
       }
     }
     .boardTwoStats {
-      width: 150px;
-      height: 150px;
+      width: 120px;
+      height: 120px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -130,4 +130,26 @@
 
 .activePerfColor {
   color: red;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+  .performancesSection {
+    .imgContainer {
+      display: none;
+    }
+    .statsContainer {
+      width: 30%;
+    }
+    .iconContainer {
+      width: 16%;
+    }
+    .perfContainer {
+      width: 25%;
+    }
+    .motorsContainer {
+      width: 16%;
+    }
+  }
 }
