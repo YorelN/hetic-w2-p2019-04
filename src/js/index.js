@@ -1,20 +1,20 @@
 import '../scss/styles.scss';
 import { perf } from "./perf";
 
+
+
+
 const navLogo = document.querySelector('.nav__logo');
 const burgerMenu = document.querySelector('.burgerMenu');
 const closeButtonMenu = document.querySelector('.closeButton');
-const burgerMEnuLinks = document.querySelectorAll('.burgerMenu li');
 if (navLogo) {
     navLogo.addEventListener('click', function () {
         burgerMenu.classList.toggle('active');
         // Don't work, will fix it later
-        console.log(burgerMEnuLinks);
-        burgerMEnuLinks.forEach((link, key) => {
-            // This shit don't work, help please ?
-            link.classList.add('showLi')
-        })
     });
+}
+
+if (closeButtonMenu) {
     closeButtonMenu.addEventListener('click', function () {
         burgerMenu.classList.toggle('active')
     });
@@ -28,10 +28,11 @@ contactBtn.addEventListener('click', function () {
     contactForm.classList.remove('hidden');
 });
 
-closeBtn.addEventListener('click', function () {
-    contactForm.classList.add('hidden');
-});
-
+if (closeBtn) {
+    closeBtn.addEventListener('click', function () {
+        contactForm.classList.add('hidden');
+    });
+}
 
 const firstSectionImg = document.querySelector('.firstSectionImg');
 
@@ -40,7 +41,15 @@ document.addEventListener('scroll', function () {
     if (isInViewport(firstSectionImg) && firstSectionImg.className !== 'firstSectionImg active') {
         firstSectionImg.classList.add('active');
         firstSectionImg.style.backgroundPosition = '100% 0';
+    }
 
+    const desktopNav = document.querySelector('.navBar');
+    const sectionContent = document.querySelector('.sectionContent');
+
+    if (isInViewport(sectionContent)) {
+        desktopNav.style.background = 'rgba(0, 0, 0, 0.4)'
+    } else {
+        desktopNav.style.background = 'transparent'
     }
 });
 
@@ -57,6 +66,7 @@ const perfContainer = document.querySelectorAll('.perfContainer div');
 
 for (let i = 0; i < perfContainer.length; i++) {
     const currPerf = perfContainer[i];
+    currPerf.style.cursor = 'pointer';
     const keyName = currPerf.textContent.toLowerCase();
 
     currPerf.addEventListener('click', function () {
@@ -82,6 +92,10 @@ for (let i = 0; i < perfContainer.length; i++) {
     })
 }
 
+
+
+
+// desktop nav
 
 
 
