@@ -54,6 +54,11 @@
       color: inherit;
       font-size: 1.6rem;
     }
+    div.activePerfColor {
+      color: #23a455;
+      font-size: 2.4rem;
+      transition: 0.2s ease;
+    }
   }
   .statsContainer {
     height: 80%;
@@ -72,10 +77,11 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-
+      color: #23a455;
       justify-content: center;
       font-size: 4.5rem;
       span {
+        color: #838383;
         font-size: 1.4rem;
       }
     }
@@ -89,8 +95,10 @@
       font-size: 4.5rem;
       margin: 4% 0;
       border-radius: 100%;
+      color: #23a455;
       border: 1px solid #AEAEAE;
       span {
+        color: #838383;
         font-size: 1.4rem;
       }
     }
@@ -128,9 +136,6 @@
   margin: 5% 0;
 }
 
-.activePerfColor {
-  color: red;
-}
 
 
 @media screen and (max-width: 1000px) {
