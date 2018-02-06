@@ -15,11 +15,21 @@
   font-family: sans-serif;
   color: white;
   transition: 0.3s;
+
+  .closeButton {
+    margin: 2rem -20px;
+  }
   li {
-    opacity: 1;
+    line-height: 4rem;
     margin: 3rem -20px;
   }
-  li:first-child {
+  li a{
+    opacity: 1;
+    text-decoration: none;
+    color: #fff;
+    line-height: 3rem;
+  }
+  li a:first-child {
     text-align: right;
     margin: -9rem 4rem 0 0
   }

@@ -4,20 +4,30 @@ import { perf } from "./perf";
 const navLogo = document.querySelector('.nav__logo');
 const burgerMenu = document.querySelector('.burgerMenu');
 const closeButtonMenu = document.querySelector('.closeButton');
+const lisBurgerMenu = document.querySelectorAll('.burgerMenu li');
+let contactForm = document.querySelector('.contactForm');
+
 if (navLogo) {
     navLogo.addEventListener('click', function () {
         burgerMenu.classList.toggle('active');
     });
 }
 
+
 if (closeButtonMenu) {
     closeButtonMenu.addEventListener('click', function () {
-        burgerMenu.classList.toggle('active')
+        burgerMenu.classList.toggle('active');
     });
 }
 
+for(let i = 0; i < (lisBurgerMenu.length); i++) {
+    const liBurgerMenu = lisBurgerMenu[i];
+    liBurgerMenu.addEventListener('click', function(){
+        burgerMenu.classList.toggle('active');
+    });
+};
+
 let contactBtn = document.querySelector('.btn-contact');
-let contactForm = document.querySelector('.contactForm');
 let closeBtn = document.querySelector('.cross');
 
 contactBtn.addEventListener('click', function () {
