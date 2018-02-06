@@ -39,11 +39,18 @@ document.addEventListener('scroll', function () {
         firstSectionImg.classList.add('active');
         firstSectionImg.style.backgroundPosition = '100% 0';
     }
+    if (!isInViewport(firstSectionImg) && firstSectionImg.className === 'firstSectionImg active') {
+        firstSectionImg.classList.remove('active');
+        firstSectionImg.style.transition = '0.3s';
+        firstSectionImg.style.backgroundPosition = '170% 0';
+    }
 
     const desktopNav = document.querySelector('.navBar');
-    const sectionContent = document.querySelector('.sectionContent');
+    const sectionContent = document.querySelector('header.header');
 
-    if (isInViewport(sectionContent)) {
+
+
+    if (window.scrollY > sectionContent.offsetHeight - 25) {
         desktopNav.style.background = 'rgba(0, 0, 0, 0.4)'
     } else {
         desktopNav.style.background = 'transparent'
@@ -66,10 +73,12 @@ for (let i = 0; i < perfContainer.length; i++) {
     currPerf.style.cursor = 'pointer';
     const keyName = currPerf.textContent.toLowerCase();
 
+
     currPerf.addEventListener('click', function () {
         const perfKeyName = Object.keys(perf);
         const perfValue = Object.values(perf);
 
+        currPerf.style.color = 'green';
         const perfOne = document.querySelector('.perfKeyOne');
         const perfTwo = document.querySelector('.perfKeyTwo');
         const mesurePerfOne = document.querySelector('.mesurePerfKeyOne');
@@ -86,6 +95,7 @@ for (let i = 0; i < perfContainer.length; i++) {
             mesurePerfOne.innerHTML = mesurePerfWithOne;
             mesurePerfTwo.innerHTML = mesurePerfWithTwo;
         }
+
     })
 }
 
