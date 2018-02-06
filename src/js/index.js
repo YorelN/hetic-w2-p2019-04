@@ -1,9 +1,6 @@
 import '../scss/styles.scss';
 import { perf } from "./perf";
 
-
-
-
 const navLogo = document.querySelector('.nav__logo');
 const burgerMenu = document.querySelector('.burgerMenu');
 const closeButtonMenu = document.querySelector('.closeButton');
@@ -101,14 +98,6 @@ for (let i = 0; i < perfContainer.length; i++) {
 
     })
 }
-
-
-
-
-// desktop nav
-
-
-
 
 
 
