@@ -51,6 +51,8 @@ document.addEventListener('scroll', function () {
     const desktopNav = document.querySelector('.navBar');
     const sectionContent = document.querySelector('header.header');
 
+
+
     if (window.scrollY > sectionContent.offsetHeight - 25) {
         desktopNav.style.background = 'rgba(0, 0, 0, 0.4)'
     } else {
