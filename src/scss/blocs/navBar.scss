@@ -34,3 +34,14 @@
     }
   }
 }
+@media screen and (max-width: 940px) {
+  .navBar {
+    display: none;
+  }
+  nav {
+    z-index: 222;
+  }
+  .nav__logo {
+    background-size: 60%;
+  }
+}
