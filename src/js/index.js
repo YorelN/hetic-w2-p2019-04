@@ -7,7 +7,6 @@ const closeButtonMenu = document.querySelector('.closeButton');
 if (navLogo) {
     navLogo.addEventListener('click', function () {
         burgerMenu.classList.toggle('active');
-        // Don't work, will fix it later
     });
 }
 
@@ -57,13 +56,7 @@ document.addEventListener('scroll', function () {
     }
 });
 
-
-
-
-
 // perf section
-
-
 const perfContainer = document.querySelectorAll('.perfContainer div');
 const iconContainer = document.querySelectorAll('.iconContainer div');
 

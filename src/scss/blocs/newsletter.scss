@@ -45,16 +45,16 @@
     display: flex;
     justify-content: center;
     align-content: center;
-  }
-  input[type="email"]#mail {
-    display: block;
-    width: 30%;
-    margin: 0 1% 0 0;
-  }
-  input[type="submit"]#subscribe {
-    display: block;
-    margin: 0;
-    width: 12%;
-    padding: 1% 0;
+    input[type="email"]#mail {
+      display: block;
+      width: 30%;
+      margin: 0 1% 0 0;
+    }
+    input[type="submit"]#subscribe {
+      display: block;
+      margin: 0;
+      width: 12%;
+      padding: 1% 0;
+    }
   }
 }
