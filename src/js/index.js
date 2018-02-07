@@ -9,6 +9,7 @@ let contactForm = document.querySelector('.contactForm');
 
 if (navLogo) {
     navLogo.addEventListener('click', function () {
+        contactForm.classList.add('hidden');
         burgerMenu.classList.toggle('active');
     });
 }
@@ -26,6 +27,11 @@ for(let i = 0; i < (lisBurgerMenu.length); i++) {
         burgerMenu.classList.toggle('active');
     });
 };
+
+lisBurgerMenu[5].addEventListener('click', function(){
+    burgerMenu.classList.remove('active');
+    contactForm.classList.remove('hidden');
+});
 
 let contactBtn = document.querySelector('.btn-contact');
 let closeBtn = document.querySelector('.cross');
